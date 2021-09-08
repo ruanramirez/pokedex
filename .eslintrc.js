@@ -11,6 +11,7 @@ module.exports = {
 		parser: 'babel-eslint',
 	},
 	rules: {
+		'eslint linebreak-style: ["error", "windows"]',
 		'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true}],
 		'import/no-extraneous-dependencies': 'off',
 		'indent': ['error', 'tab'],
@@ -22,13 +23,13 @@ module.exports = {
 			'array': false,
 		}],
 		'vue/html-indent': ['error', 'tab'],
-		// 'vue/max-attibutes-per-line': ['error', {
-		// 	'singleline': 3,
-		// 	'multiple': {
-		// 		'max': 1,
-		// 		'allowFirstLine': false
-		// 	}
-		// }],
+		'vue/max-attibutes-per-line': ['error', {
+			'singleline': 3,
+			'multiple': {
+				'max': 1,
+				'allowFirstLine': false
+			}
+		}],
 		'vue/script-indent': ['error', 'tab', {
 			'baseIndent': 1,
 			'switchCase': 1,
